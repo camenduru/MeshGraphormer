@@ -22,7 +22,7 @@ class MANO(nn.Module):
     def __init__(self):
         super(MANO, self).__init__()
 
-        self.mano_dir = 'src/modeling/data'
+        self.mano_dir = 'MeshGraphormer/src/modeling/data'
         self.layer = self.get_layer()
         self.vertex_num = 778
         self.face = self.layer.th_faces.numpy()
